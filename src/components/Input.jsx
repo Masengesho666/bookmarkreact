@@ -13,7 +13,7 @@ const Input = ({type, placeholder})=> {
 
 
     );
-};
+};  
 
 export default Input
 
