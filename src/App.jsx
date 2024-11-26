@@ -13,27 +13,29 @@
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Homepage from "./pages/Homepage"
-import NotFount from "./pages/NotFount"
-import Login from "./pages/Login"
+// import NotFount from "./pages/NotFount"
+// import Login from "./pages/Login"
 
 
 const App = () => {
 
   return (
-    <Router>
-      <Routes>
-        {/* route to  Home */}
-  <Route path="/" element={<Homepage/>}/> 
 
-     {/* route to  Login */}
-  <Route path="/Login" element={<Login/>}/> 
+    <Homepage/>
+  //   <Router>
+  //     <Routes>
+  //       {/* route to  Home */}
+  // <Route path="/" element={<Homepage/>}/> 
 
-     {/* catch other routes that is not defined */}
-  <Route path="*" element={<NotFount/>}/> 
+  //    {/* route to  Login */}
+  // <Route path="/Login" element={<Login/>}/> 
 
-  </Routes>
+  //    {/* catch other routes that is not de */}
+  // <Route path="*" element={<NotFount/>}/> 
 
-  </Router>
+  // </Routes>
+
+  // </Router>
   )
 }
 

@@ -1,19 +1,23 @@
 
-//  import propTypes from "propTypes"
-const Button = ({buttonText})=> {
+import PropTypes from "prop-types";
+
+
+const Button = ({ bgColor, buttonText, onClick }) => {
   return (
-   
-   
-        <button type="button" className={`bg-purple-500 px-8 py-2 rounded-[16px] ${className}`}>
-            {buttonText}
-        </button>
+
+
+    <button className={`${bgColor}  rounded-md bg-red-500 px-5 py-1 text-white`} onClick={onClick} >
     
+      {buttonText}
+    </button>
+
   );
 };
 
-export default Button
-// Button.propTypes = {
-//   buttonText: propTypes.string.isRequired,
-//   className: propTypes.string,
-  
-// };
+export default Button;
+Button.propTypes =
+{
+  bgColor: PropTypes.string,
+  buttonText: PropTypes.string,
+  onClick: PropTypes.function
+}
